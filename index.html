@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Smart Recipes</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container pt-2 pb-5 px-4 px-lg-0">
+        <div class="row py-4">
+            <div class="col-12 text-center">
+                <img width="100" class="mb-4" src="https://www.smartcommerce.com/img/logo.svg">
+            </div>
+            <div class="col-12">
+                <img class="img-fluid"
+                    src="https://barilla-classic-recipes.gomyxx.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Ftpzim1c1enab%2F6E87EyOykMVL7bAk99BlRi%2F2b5315ebb016e969b36439b0a9825fa7%2FBarilla_23_BB_Sept-Oct_AMC_Offsite_Billboard_1400x500_FINAL_7.26.23.jpg&w=3840&q=75">
+            </div>
+        </div>
+        <div class="row row-cols-2 row-cols-md-2 row-cols-lg-4 g-2 g-lg-4">
+            <div class="col">
+                <div class="card h-100">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#recipe1">
+                        <img src="https://www.firstforwomen.com/wp-content/uploads/sites/2/2022/12/Slices-of-French-toast-on-a-plate-with-syrup.jpg"
+                            class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <h6 class="card-title">Have Leftover Eggnog? Use It To Make the Tastiest French Toast</h6>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 mb-2">
+                        <div class="d-grid gap-2">
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#recipe2">
+                        <img src="https://www.firstforwomen.com/wp-content/uploads/sites/2/2022/11/Pecan-Mug-Cake.jpg"
+                            class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <h6 class="card-title">This ‘Lazy’ Pecan Pie in a Mug Is Ready To Eat in Under 10 Minutes (and
+                            Tastes Absolutely Incredible)</h6>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 mb-2">
+                        <div class="d-grid gap-2">
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#recipe3">
+                        <img src="img/recipe-003.jpg" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <h6 class="card-title">Cinnamon Apple-tini</h6>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 mb-2">
+                        <div class="d-grid gap-2">
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#recipe4">
+                        <img src="https://www.firstforwomen.com/wp-content/uploads/sites/2/2023/12/shutterstock_1503266795.jpg"
+                            class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <h6 class="card-title">These 3 Easy Air Fryer Appetizers Would Be Perfect for a New Year’s Eve
+                            Party</h6>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 mb-2">
+                        <div class="d-grid gap-2">
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recipe 1 -->
+    <div class="modal fade" id="recipe1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Have Leftover Eggnog? Use It To Make the
+                        Tastiest French Toast</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row p-1">
+                        <div class="col-12">
+                            <img class="img-fluid mb-4"
+                                src="https://www.firstforwomen.com/wp-content/uploads/sites/2/2022/12/Slices-of-French-toast-on-a-plate-with-syrup.jpg">
+                            <div class="d-grid gap-2 mb-4">
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mb-3"><strong>Ingredients:</strong></div>
+                            <ul>
+                                <li>1 ½ cups eggnog</li>
+                                <li>2 eggs, beaten slightly</li>
+                                <li>1 ½ tablespoons ground cinnamon, or to taste</li>
+                                <li>1 teaspoon pumpkin pie spice</li>
+                                <li>12 slices French bread</li>
+                                <li>Maple syrup (to serve)</li>
+                            </ul>
+                            <hr>
+                            <div class="mb-3"><strong>Directions:</strong></div>
+                            <ul>
+                                <li>Prep: 15 mins</li>
+                                <li>Cook: 10 mins</li>
+                                <li>Total: 25 mins</li>
+                                <li>Servings: 6</li>
+                            </ul>
+                            <ol>
+                                <li>Whisk eggnog, eggs, cinnamon, and pumpkin pie spice together in mixing bowl until
+                                    well blended; pour into shallow dish.</li>
+                                <li>Preheat pan over medium heat or electric skillet to 300 degrees Fahrenheit. Lightly
+                                    grease skillet.</li>
+                                <li>Dip one slice of bread at a time into eggnog mixture, coating each side of bread
+                                    thoroughly.</li>
+                                <li>Place prepared bread slices into preheated skillet and cook, turning once, until
+                                    golden brown on each side.</li>
+                                <li>Place cooked bread slices on serving plate and cover with foil to keep warm until
+                                    all slices are cooked. Serve
+                                    immediately.</li>
+                            </ol>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Recipe 2 -->
+    <div class="modal fade" id="recipe2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">This ‘Lazy’ Pecan Pie in a Mug Is Ready To Eat
+                        in Under 10 Minutes (and Tastes Absolutely Incredible)</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row p-1">
+                        <div class="col-12">
+                            <img class="img-fluid mb-4"
+                                src="https://www.firstforwomen.com/wp-content/uploads/sites/2/2022/11/Pecan-Mug-Cake.jpg">
+                            <div class="d-grid gap-2 mb-4">
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mb-3"><strong>Ingredients:</strong></div>
+                            <ul>
+                                <li>1 ½ cups eggnog</li>
+                                <li>2 eggs, beaten slightly</li>
+                                <li>1 ½ tablespoons ground cinnamon, or to taste</li>
+                                <li>1 teaspoon pumpkin pie spice</li>
+                                <li>12 slices French bread</li>
+                                <li>Maple syrup (to serve)</li>
+                            </ul>
+                            <hr>
+                            <div class="mb-3"><strong>Directions:</strong></div>
+                            <ul>
+                                <li>Prep: 15 mins</li>
+                                <li>Cook: 10 mins</li>
+                                <li>Total: 25 mins</li>
+                                <li>Servings: 6</li>
+                            </ul>
+                            <ol>
+                                <li>Whisk eggnog, eggs, cinnamon, and pumpkin pie spice together in mixing bowl until
+                                    well blended; pour into shallow dish.
+                                <li>Preheat pan over medium heat or electric skillet to 300 degrees Fahrenheit. Lightly
+                                    grease skillet.</li>
+                                <li>Dip one slice of bread at a time into eggnog mixture, coating each side of bread
+                                    thoroughly.</li>
+                                <li>Place prepared bread slices into preheated skillet and cook, turning once, until
+                                    golden brown on each side.</li>
+                                <li>Place cooked bread slices on serving plate and cover with foil to keep warm until
+                                    all slices are cooked. Serve
+                                    immediately.</li>
+                            </ol>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Recipe 3 -->
+    <div class="modal fade" id="recipe3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Cinnamon Apple-tini</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row p-1">
+                        <div class="col-12">
+                            <img class="img-fluid mb-4"
+                                src="https://www.firstforwomen.com/wp-content/uploads/sites/2/2022/11/Pecan-Mug-Cake.jpg">
+                            <div class="d-grid gap-2 mb-4">
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mb-3"><strong>Ingredients Instructions:</strong></div>
+                            <ul>
+                                <li>1/2 c. apple cider</li>
+                                <li>1/4 c. vodka</li>
+                                <li>1 tsp. cinnamon</li>
+                                <li>1 tbsp. caramel sauce</li>
+                            </ul>
+
+                            <p>Wet edge of 2 martini glasses with apple cider, then dip in cinnamon-sugar mixture. In
+                                cocktail shaker filled with ice,
+                                combine 1/2 cup apple cider, 1/4 cup vodka, 1 teaspoon cinnamon, and 1 tablespoon
+                                caramel sauce. Pour into glasses.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Recipe 4 -->
+    <div class="modal fade" id="recipe4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">These 3 Easy Air Fryer Appetizers Would Be
+                        Perfect for a New Year’s Eve Party</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row p-1">
+                        <div class="col-12">
+                            <img class="img-fluid mb-4"
+                                src="https://www.firstforwomen.com/wp-content/uploads/sites/2/2022/11/Pecan-Mug-Cake.jpg">
+                            <div class="d-grid gap-2 mb-4">
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mb-3"><strong>Ingredients Instructions:</strong></div>
+                            <ul>
+                                <li>½ cup flour</li>
+                                <li>2 eggs (beaten)</li>
+                                <li>1 cup Italian-style breadcrumbs</li>
+                                <li>1 package ravioli (9 ounces)</li>
+                                <li>1 cup marinara sauce</li>
+                            </ul>
+                            <hr>
+                            <div class="mb-3"><strong>Instructions:</strong></div>
+                            <ol>
+                                <li>Add each of the first three ingredients to a separate bowl.</li>
+                                <li>Dip ravioli in flour, then eggs, then breadcrumbs.</li>
+                                <li>In batches, lay ravioli in single layer in basket; air-fry at 350 degrees Fahrenheit
+                                    for 8 minutes per batch, flipping
+                                    halfway through. Serve with marinara sauce.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

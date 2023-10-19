@@ -21,11 +21,26 @@
     <style>
         body {
             font-family: 'Poppins', sans-serif;
+            height: 100%;
         }
 
         a {
             text-decoration: none;
             color: black;
+        }
+
+        li {
+            line-height: 2rem;
+        }
+
+        .offcanvas,
+        .offcanvas-lg,
+        .offcanvas-md,
+        .offcanvas-sm,
+        .offcanvas-xl,
+        .offcanvas-xxl {
+            --bs-offcanvas-width: 450px;
+
         }
     </style>
 </head>
@@ -45,8 +60,7 @@
             <div class="col">
                 <div class="card h-100">
                     <a href="#" data-bs-toggle="modal" data-bs-target="#recipe1">
-                        <img src="https://www.firstforwomen.com/wp-content/uploads/sites/2/2022/12/Slices-of-French-toast-on-a-plate-with-syrup.jpg"
-                            class="card-img-top" alt="...">
+                        <img src="img/recipe-001.jpg" class="card-img-top" alt="...">
                     </a>
                     <div class="card-body">
                         <h6 class="card-title">Eggnog French Toast</h6>
@@ -61,8 +75,7 @@
             <div class="col">
                 <div class="card h-100">
                     <a href="#" data-bs-toggle="modal" data-bs-target="#recipe2">
-                        <img src="https://www.firstforwomen.com/wp-content/uploads/sites/2/2022/11/Pecan-Mug-Cake.jpg"
-                            class="card-img-top" alt="...">
+                        <img src="img/recipe-002.jpg" class="card-img-top" alt="...">
                     </a>
                     <div class="card-body">
                         <h6 class="card-title">Pecan Pie in a Mug</h6>
@@ -92,11 +105,71 @@
             <div class="col">
                 <div class="card h-100">
                     <a href="#" data-bs-toggle="modal" data-bs-target="#recipe4">
-                        <img src="https://www.firstforwomen.com/wp-content/uploads/sites/2/2023/12/shutterstock_1503266795.jpg"
-                            class="card-img-top" alt="...">
+                        <img src="img/recipe-004.jpg" class="card-img-top" alt="...">
                     </a>
                     <div class="card-body">
                         <h6 class="card-title">A Cheesy Delight: Fried Ravioli</h6>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 mb-2">
+                        <div class="d-grid gap-2">
+                            <a href="#" class="btn btn-primary rounded-pill">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#recipe5">
+                        <img src="img/recipe-005.jpg" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <h6 class="card-title">Mashed Pumpkin</h6>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 mb-2">
+                        <div class="d-grid gap-2">
+                            <a data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                                aria-controls="offcanvasExample" class="btn btn-primary rounded-pill">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#recipe6">
+                        <img src="img/recipe-006.jpg" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <h6 class="card-title">Ravioli Lasagna</h6>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 mb-2">
+                        <div class="d-grid gap-2">
+                            <a href="#" class="btn btn-primary rounded-pill">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#recipe7">
+                        <img src="img/recipe-007.jpg" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <h6 class="card-title">Manuka Honey Peanut Butter Blossoms</h6>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 mb-2">
+                        <div class="d-grid gap-2">
+                            <a href="#" class="btn btn-primary rounded-pill">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#recipe8">
+                        <img src="img/recipe-007.jpg" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <h6 class="card-title">Manuka Honey Peanut Butter Blossoms</h6>
                     </div>
                     <div class="card-footer bg-transparent border-top-0 mb-2">
                         <div class="d-grid gap-2">
@@ -119,8 +192,7 @@
                 <div class="modal-body">
                     <div class="row p-1">
                         <div class="col-12">
-                            <img class="img-fluid mb-4"
-                                src="https://www.firstforwomen.com/wp-content/uploads/sites/2/2022/12/Slices-of-French-toast-on-a-plate-with-syrup.jpg">
+                            <img class="img-fluid mb-4" src="img/recipe-001.jpg">
                             <div class="d-grid gap-2 mb-4">
                                 <a href="#" class="btn btn-primary rounded-pill">Add to Cart</a>
                             </div>
@@ -177,8 +249,7 @@
                 <div class="modal-body">
                     <div class="row p-1">
                         <div class="col-12">
-                            <img class="img-fluid mb-4"
-                                src="https://www.firstforwomen.com/wp-content/uploads/sites/2/2022/11/Pecan-Mug-Cake.jpg">
+                            <img class="img-fluid mb-4" src="img/recipe-002.jpg">
                             <div class="d-grid gap-2 mb-4">
                                 <a href="#" class="btn btn-primary rounded-pill">Add to Cart</a>
                             </div>
@@ -235,8 +306,7 @@
                 <div class="modal-body">
                     <div class="row p-1">
                         <div class="col-12">
-                            <img class="img-fluid mb-4"
-                                src="https://www.firstforwomen.com/wp-content/uploads/sites/2/2022/11/Pecan-Mug-Cake.jpg">
+                            <img class="img-fluid mb-4" src="img/recipe-003.jpg">
                             <div class="d-grid gap-2 mb-4">
                                 <a href="#" class="btn btn-primary rounded-pill">Add to Cart</a>
                             </div>
@@ -274,8 +344,7 @@
                 <div class="modal-body">
                     <div class="row p-1">
                         <div class="col-12">
-                            <img class="img-fluid mb-4"
-                                src="https://www.firstforwomen.com/wp-content/uploads/sites/2/2022/11/Pecan-Mug-Cake.jpg">
+                            <img class="img-fluid mb-4" src="img/recipe-004.jpg">
                             <div class="d-grid gap-2 mb-4">
                                 <a href="#" class="btn btn-primary rounded-pill">Add to Cart</a>
                             </div>
@@ -298,6 +367,261 @@
                                     for 8 minutes per batch, flipping
                                     halfway through. Serve with marinara sauce.</li>
                             </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Recipe 5 -->
+    <div class="modal fade" id="recipe5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Mashed Pumpkin</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row p-1">
+                        <div class="col-12">
+                            <img class="img-fluid mb-4" src="img/recipe-005.jpg">
+                            <div class="d-grid gap-2 mb-4">
+                                <a href="https://shop.basketful.co/bundle?bundle=1b03763f-c158-4214-b5af-6ccd0c804754"
+                                    class="btn btn-primary rounded-pill">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mb-3"><strong>Ingredients</strong></div>
+                            <ul>
+                                <li>2.6 lbs. piece pumpkin, peeled, seeded, chopped coarsely</li>
+                                <li>1.5 oz. butter, chopped</li>
+                                <li>1 Tbsp. finely chopped fresh chives</li>
+                                <li>salt and freshly ground black pepper</li>
+                                <li>whole nutmeg</li>
+                            </ul>
+                            <hr>
+                            <div class="mb-3"><strong>Instructions</strong></div>
+                            <ol>
+                                <li>Steam or microwave the pumpkin until tender; drain well.</li>
+                                <li>Mash the pumpkin and butter in a large bowl until smooth. Stir in chopped chives;
+                                    season to taste with salt and pepper.</li>
+                                <li>Grate a little nutmeg over mashed pumpkin.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <iframe src="https://shop.basketful.co/bundle?bundle=1b03763f-c158-4214-b5af-6ccd0c804754" frameborder="0"
+                style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0px;left:0px;right:0px;bottom:0px"
+                height="100%" width="100%"></iframe>
+        </div>
+    </div>
+    <div class="modal fade" id="recipe55" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Mashed Pumpkin</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe width="100%" height="600px"
+                        src="https://shop.basketful.co/bundle?bundle=1b03763f-c158-4214-b5af-6ccd0c804754"
+                        title="W3Schools Free Online Web Tutorials"></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Recipe 6 -->
+    <div class="modal fade" id="recipe6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Ravioli Lasagna</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row p-1">
+                        <div class="col-12">
+                            <img class="img-fluid mb-4" src="img/recipe-006.jpg">
+                            <div class="d-grid gap-2 mb-4">
+                                <a href="#" class="btn btn-primary rounded-pill">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mb-3"><strong>Ingredients</strong></div>
+                            <ul>
+                                <li>1 Tbs. + 1 tsp olive oil</li>
+                                <li>1 lb. mild or spicy Italian sausage (casing removed)</li>
+                                <li>4½ cups marinara sauce</li>
+                                <li>2 lbs. frozen cheese ravioli, thawed (about 24 ravioli)</li>
+                                <li>2 ½ cups shredded mozzarella cheese</li>
+                                <li>1 cup freshly grated parmesan cheese</li>
+                            </ul>
+                            <hr>
+                            <div class="mb-3"><strong>Instructions</strong></div>
+                            <ol>
+                                <li>Preheat oven 400°F.</li>
+                                <li>Brush 9-by-13-inch pan with 1 tsp. olive oil. Heat large skillet on medium heat. Add
+                                    remaining tablespoon olive oil and
+                                    sausage. Cook, breaking sausage into bite-sized pieces with the back of a wooden
+                                    spoon, until sausage begins to brown;
+                                    about 8 minutes. Add marinara and simmer. Remove from heat and cool slightly.</li>
+                                <li>Spoon a third of the sauce mixture over bottom of pan. Place layer of ravioli on top
+                                    of sauce. Pour half of remaining
+                                    sauce on top of ravioli. Sprinkle sauce with one cup mozzarella and ½ cup parmesan.
+                                    Repeat with another layer of
+                                    ravioli. Top with remaining sauce, mozzarella, and parmesan.</li>
+                                <li>Bake uncovered 25 minutes or until edges are bubbling. Switch oven to broil and
+                                    broil on high 3 to 4 minutes or until
+                                    cheese is golden brown. Allow lasagna to sit 10 minutes before serving. Enjoy!</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Recipe 7 -->
+    <div class="modal fade" id="recipe7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Manuka Honey Peanut Butter Blossoms</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row p-1">
+                        <div class="col-12">
+                            <img class="img-fluid mb-4" src="img/recipe-007.jpg">
+                            <div class="d-grid gap-2 mb-4">
+                                <a href="#" class="btn btn-primary rounded-pill">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mb-3"><strong>Ingredients</strong></div>
+                            <ul>
+                                <li>1 stick plant butter, softened</li>
+                                <li>1/2 cup creamy natural peanut butter</li>
+                                <li>1/2 cup packed brown sugar</li>
+                                <li>2 tablespoons Comvita Manuka Honey</li>
+                                <li>egg replacer equivalent of 1 egg, such as Bob’s Red Mill (Buy from Amazon, $4.39)
+                                </li>
+                                <li>1 teaspoon vanilla extract</li>
+                                <li>1 cup all-purpose flour</li>
+                                <li>3/4 cup whole wheat flour</li>
+                                <li>1 teaspoon baking soda</li>
+                                <li>1/4 teaspoon sea salt</li>
+                                <li>1/2 cup sugar, for rolling</li>
+                                <li>15 kisses or large vegan chocolate chips</li>
+                            </ul>
+                            <hr>
+                            <div class="mb-3"><strong>Instructions</strong></div>
+                            <ol>
+                                <li>Preheat oven to 375 degrees Fahrenheit.</li>
+                                <li>Using an electric hand mixer, cream the butter in a medium bowl. Add in the peanut
+                                    butter, brown sugar, manuka
+                                    honey, egg replacer, and vanilla extract, using the mixer.</li>
+                                <li>In a separate bowl, whisk together the flours, baking soda, and salt. Add the wet
+                                    ingredients to the dry and
+                                    combine.</li>
+                                <li>Gather the dough, form it into a ball, wrap it in plastic, and refrigerate for 20-30
+                                    minutes, until firm enough
+                                    to roll into balls.</li>
+                                <li>Place the 1/2 cup of sugar into a small bowl. Use a small ice cream scoop to scoop
+                                    about 1 tablespoon of the
+                                    dough. Form each scoop into a ball and roll in the sugar. Place on a Silpat or
+                                    parchment-lined baking sheet.
+                                </li>
+                                <li>Bake for 9 to 10 minutes, until cracked on top. Remove from the oven and press
+                                    kisses or chips into the middle
+                                    of the cookie.</li>
+                            </ol>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Recipe 8 -->
+    <div class="modal fade" id="recipe8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Manuka Honey Peanut Butter Blossoms</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row p-1">
+                        <div class="col-12">
+                            <img class="img-fluid mb-4" src="img/recipe-007.jpg">
+                            <div class="d-grid gap-2 mb-4">
+                                <a href="#" class="btn btn-primary rounded-pill">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mb-3"><strong>Ingredients</strong></div>
+                            <ul>
+                                <li>1 stick plant butter, softened</li>
+                                <li>1/2 cup creamy natural peanut butter</li>
+                                <li>1/2 cup packed brown sugar</li>
+                                <li>2 tablespoons Comvita Manuka Honey</li>
+                                <li>egg replacer equivalent of 1 egg, such as Bob’s Red Mill (Buy from Amazon, $4.39)
+                                </li>
+                                <li>1 teaspoon vanilla extract</li>
+                                <li>1 cup all-purpose flour</li>
+                                <li>3/4 cup whole wheat flour</li>
+                                <li>1 teaspoon baking soda</li>
+                                <li>1/4 teaspoon sea salt</li>
+                                <li>1/2 cup sugar, for rolling</li>
+                                <li>15 kisses or large vegan chocolate chips</li>
+                            </ul>
+                            <hr>
+                            <div class="mb-3"><strong>Instructions</strong></div>
+                            <ol>
+                                <li>Preheat oven to 375 degrees Fahrenheit.</li>
+                                <li>Using an electric hand mixer, cream the butter in a medium bowl. Add in the peanut
+                                    butter, brown sugar, manuka
+                                    honey, egg replacer, and vanilla extract, using the mixer.</li>
+                                <li>In a separate bowl, whisk together the flours, baking soda, and salt. Add the wet
+                                    ingredients to the dry and
+                                    combine.</li>
+                                <li>Gather the dough, form it into a ball, wrap it in plastic, and refrigerate for 20-30
+                                    minutes, until firm enough
+                                    to roll into balls.</li>
+                                <li>Place the 1/2 cup of sugar into a small bowl. Use a small ice cream scoop to scoop
+                                    about 1 tablespoon of the
+                                    dough. Form each scoop into a ball and roll in the sugar. Place on a Silpat or
+                                    parchment-lined baking sheet.
+                                </li>
+                                <li>Bake for 9 to 10 minutes, until cracked on top. Remove from the oven and press
+                                    kisses or chips into the middle
+                                    of the cookie.</li>
+                            </ol>
+
                         </div>
                     </div>
                 </div>
